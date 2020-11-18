@@ -1,1 +1,3 @@
-console.log(123);
+import "../app/style/style.css";
+
+console.log("app.js talking...");
