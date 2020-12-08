@@ -1,3 +1,4 @@
 import "../app/style/style.css";
-
-console.log("app.js talking...");
+if (module.hot) {
+    module.hot.accept();
+}
