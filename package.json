@@ -27,6 +27,7 @@
     "postcss": "^8.1.14",
     "postcss-import": "^13.0.0",
     "postcss-loader": "^4.1.0",
+    "postcss-mixins": "^7.0.1",
     "postcss-nested": "^5.0.2",
     "postcss-simple-vars": "^6.0.1",
     "style-loader": "^2.0.0",
