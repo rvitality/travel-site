@@ -14,3 +14,7 @@ img {
     justify-content: center;
     text-align: center;
 }
+
+a{
+    color: $mainOrange;
+}

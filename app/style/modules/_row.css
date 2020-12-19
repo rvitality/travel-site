@@ -1,0 +1,13 @@
+.row{
+
+    border: 1px solid green;
+
+    @mixin atMedium{
+        &--two-cols{
+            display: grid;
+            grid-template-columns: 35% 60%;
+            grid-gap: 3%;
+        }
+    }
+
+}
