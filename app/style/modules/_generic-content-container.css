@@ -1,10 +1,10 @@
 .generic-content-container{
-    border: 1px solid orange;
     
-    p{
+    p {
         line-height: 1.65;
         font-size: 1.125rem;
-        margin: 1.8rem 0
+        margin: 0 0 1.8rem 0;
+        font-weight: 300;
     }
 
     p a{

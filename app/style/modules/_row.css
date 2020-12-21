@@ -1,13 +1,35 @@
 .row{
-
-    border: 1px solid green;
+    display: grid;
 
     @mixin atMedium{
         &--two-cols{
-            display: grid;
             grid-template-columns: 35% 60%;
             grid-gap: 3%;
         }
+        
+        &--two-cols-equal{
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10%;
+        }
+
+    }
+
+}
+
+.feature-item{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+
+    &--title{
+        font-size: 1.875rem;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+
+    &--icon{
+        margin-right: 2rem;
     }
 
 }
