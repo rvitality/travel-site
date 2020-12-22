@@ -7,6 +7,12 @@
         font-size: 2.875rem;
     }
 
+    @mixin atMedium{
+        &--no-t-margin{
+            margin-top: 0;
+        }
+    }
+
     &--centered{
         text-align: center;
     }
@@ -39,10 +45,6 @@
     
     &--b-margin-large{
         margin-bottom: 1.6em;
-    }
-
-    &--no-t-margin{
-        margin-top: 0;
     }
 
 }

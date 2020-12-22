@@ -8,9 +8,13 @@
         font-size: 3.75rem;
     }
 
+    &--blue{
+        color: $mainBlue;
+    }
+
     &__icon{
         display: block;
-        margin: 0 auto 1rem auto;
+        margin: 1.25rem auto;
         
         @mixin atMedium{
             display: inline-block;

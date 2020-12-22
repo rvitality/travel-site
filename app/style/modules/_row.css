@@ -17,9 +17,14 @@
 }
 
 .feature-item{
-    display: flex;
-    align-items: flex-start;
-    margin-top: 2rem;
+    display: inline-block;
+
+
+    @mixin atSmall{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
 
     &--title{
         font-size: 1.875rem;
@@ -29,7 +34,23 @@
 
 
     &--icon{
-        margin-right: 2rem;
+        display: block;
+        margin: 0 auto 1.5rem auto;
+        
+        @mixin atSmall{
+            margin-right: 2rem;
+            display: inline-block;
+        }
+        
+    }
+
+    &--title{
+        text-align: center;
+
+        @mixin atSmall{
+            text-align: left;
+        }
+
     }
 
 }

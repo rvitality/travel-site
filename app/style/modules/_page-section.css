@@ -1,5 +1,4 @@
 .page-section{
-    
     padding: 1.2rem 0;
     
     @mixin atMedium{
@@ -10,5 +9,13 @@
         background-color: $mainBlue;
         color: #fff;
     }
+
+    &--testimonials {
+        /* border: 10px solid red; */
+        /* background-image: url("https://images.pexels.com/photos/3184356/pexels-photo-3184356.jpeg?cs=srgb&dl=pexels-fauxels-3184356.jpg&fm=jpg"); */
+        background:linear-gradient(0deg, rgba(255,255,255,.5), rgba(255,255,255,0.5)), url("https://images.pexels.com/photos/3184356/pexels-photo-3184356.jpeg?cs=srgb&dl=pexels-fauxels-3184356.jpg&fm=jpg");
+  background-size:cover;
+        background-size: cover;
+      }
 
 }
