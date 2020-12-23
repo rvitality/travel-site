@@ -3,6 +3,15 @@
     max-width: 1236px;
     margin: auto;
 
+    &--no-padding-until-medium{
+        padding: 0;
+
+        @mixin atLarge{
+            padding: 0 1.1rem;
+        }
+
+    }
+
     &--medium{
         max-width: 976px;
     }
@@ -15,6 +24,7 @@
         }
 
     }
+    
 
     .wrapper{
         padding: 0 0;

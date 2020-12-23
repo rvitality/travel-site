@@ -13,10 +13,13 @@
     }
 
     &__icon{
+
         display: block;
         margin: 1.25rem auto;
         
         @mixin atMedium{
+            position: relative; 
+            top: 8px; 
             display: inline-block;
             margin-bottom: 0;
             margin-right: 1rem;

@@ -30,6 +30,10 @@
         }
     }
 
+    &--semi-light{
+        font-weight: 300;
+    }
+
     &--light{
         font-weight: 200;
     }
