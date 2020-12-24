@@ -1,0 +1,25 @@
+.primary-nav{
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        list-style-type: none;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #fff;
+        margin-right: 1.5rem;
+        padding: .7rem 1rem;
+        transition: .3s all ease;
+    }
+
+    a:hover{
+        background: rgba(255, 255, 255, .8);
+        color: #000;
+    }
+
+}

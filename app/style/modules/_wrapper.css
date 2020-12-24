@@ -3,6 +3,13 @@
     max-width: 1236px;
     margin: auto;
 
+    /* display flex for the nav */
+    &--display-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     &--no-padding-until-medium{
         padding: 0;
 

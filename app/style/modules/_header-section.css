@@ -1,0 +1,38 @@
+.header-section{
+    padding: .8rem 0;
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+
+    @mixin atMedium{
+        background: rgba($mainBlue, .3);
+    }
+    
+    &__logo{
+        position: absolute;
+        top: 0;
+        padding: 25px 36px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $mainBlue;
+
+        @mixin atMedium{
+            left: auto;
+            transform: translateX(0);
+        }
+    }
+
+    &__nav-container{
+
+        display: none;
+
+        @mixin atMedium{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+    }
+
+}
