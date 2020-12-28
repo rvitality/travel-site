@@ -2,6 +2,7 @@ class MobileMenu {
     constructor() {
         this.menuIcon = document.querySelector(".header-section__menu-icon");
         this.menuContent = document.querySelector(".header-section__nav-container");
+        this.headerSection = document.querySelector(".header-section");
         this.events();
     }
 
@@ -11,6 +12,7 @@ class MobileMenu {
 
     toggleMenu() {
         this.menuContent.classList.toggle("header-section__nav-container--is-visible")
+        this.headerSection.classList.toggle("header-section__nav-container--is-expanded")
     }
 
 }
