@@ -11,8 +11,9 @@ class MobileMenu {
     }
 
     toggleMenu() {
-        this.menuContent.classList.toggle("header-section__nav-container--is-visible")
-        this.headerSection.classList.toggle("header-section__nav-container--is-expanded")
+        this.menuContent.classList.toggle("header-section__nav-container--is-visible");
+        this.headerSection.classList.toggle("header-section__nav-container--is-expanded");
+        this.menuIcon.classList.toggle("header-section__menu-icon--close-x");
     }
 
 }
