@@ -18,7 +18,9 @@
     "url": "https://github.com/rvitality/travel-site/issues"
   },
   "homepage": "https://github.com/rvitality/travel-site#readme",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
   "devDependencies": {
     "autoprefixer": "^10.0.4",
     "css-loader": "^5.0.1",

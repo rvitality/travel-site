@@ -1,9 +1,10 @@
 .btn {
-    background-color: $mainBlue;
     color: #fff;
     padding: .75rem 1.2rem;
     text-decoration:none;
     display: inline-block;
+    transition: transform .2s ease-in-out;
+    background-color: $mainBlue;
 
     &__orange{
         background-color: $mainOrange;
@@ -21,5 +22,9 @@
         }
     }
 
+}
+
+.btn:hover{
+    transform: scale(1.1);
 }
 
