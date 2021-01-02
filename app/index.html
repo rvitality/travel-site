@@ -19,17 +19,15 @@
         <div class="header-section__menu-icon__middle"></div>
       </div>
 
-      <div>
-        <img src="assets/images/icons/clear-view-escapes.svg" class="header-section__logo">
-      </div>
+      <img src="assets/images/icons/clear-view-escapes.svg" class="header-section__logo">
 
       <div class="header-section__nav-container">
 
         <nav class="primary-nav">
           <ul>
-            <li><a href="#our-beginning">Our Beginning</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
+            <li><a href="#features" id="features-link">Features</a></li>
+            <li><a href="#testimonials"  id="testimonials-link">Testimonials</a></li>
           </ul>
         </nav>
 
@@ -66,7 +64,8 @@
 
   </div>
 
-  <div id="our-beginning" class="page-section">
+  <!-- OUR BEGINNING -->
+  <div id="our-beginning" class="page-section" data-matching-link="#our-beginning-link">
 
     <div class="wrapper">
 
@@ -75,7 +74,7 @@
 
       <div class="wrapper wrapper--medium wrapper--b-margin">
 
-        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/first-trip-low-res-i.jpg 565w, assets/images/first-trip-i.jpg 976w, assets/images/first-trip-hi-dpi-i.jpg 1952w" alt="Couple walking down a street.">
+        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
         
         <!-- <img src="assets/images/first-trip.jpg" alt="Couple walking down a street."> -->
       </div>
@@ -84,9 +83,9 @@
         
         <div>
           <picture>
-            <source sizes="404px" srcset="assets/images/our-start-i.jpg 404w, assets/images/our-start-hi-dpi-i.jpg 808w" media="(min-width: 1020px)">
-            <source sizes="320px" srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width: 800px)">
-            <img srcset="assets/images/our-start-landscape-i.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder, Jane Doe">
+            <source sizes="404px" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">
+            <source sizes="320px" srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w" media="(min-width: 800px)">
+            <img srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder, Jane Doe">
           </picture>
         </div>
         
@@ -112,8 +111,8 @@
 
   </div>
 
-
-  <div id="features" class="page-section page-section--blue">
+<!-- FEATURES SECTION -->
+  <div id="features" class="page-section page-section--blue"  data-matching-link="#features-link">
     <div class="wrapper">
 
       <h2 class="section-title"><img src="assets/images/icons/star.svg" class="section-title__icon">Our <strong>Features</strong></h2>
@@ -167,7 +166,8 @@
 
   </div>
 
-  <div id="testimonials" class="page-section page-section--testimonials page-section--no-b-padding-until-medium">
+  <!-- TESTIMONIALS SECTION -->
+  <div id="testimonials" class="page-section page-section--testimonials page-section--no-b-padding-until-medium" data-matching-link="#testimonials-link">
 
     <div class="wrapper wrapper--no-padding-until-medium">
       <h2 class="section-title section-title--blue"><img src="assets/images/icons/comment.svg" class="section-title__icon">Real <strong>Testimonials</strong></h2>
