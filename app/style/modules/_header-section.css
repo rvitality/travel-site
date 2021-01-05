@@ -107,7 +107,7 @@
             transform: translateX(0);
 
             .header-section--dark &{
-                transform: scale(.62);
+                transform: scale(.63);
             }
 /* 
             .header-section--dark &:hover{

@@ -14,7 +14,6 @@ class RevealOnScroll {
     events() {
         window.addEventListener("scroll", this.scrollThrottle);
         window.addEventListener("resize", debounce(() => {
-            console.log("debounce ran -----------------------------");
             this.windowHeight = window.innerHeight;
         }, 333));
     }
@@ -29,8 +28,6 @@ class RevealOnScroll {
     }
 
     calculateIfScrolledTo(el) {
-        // console.log(window.scrollY + this.windowHeight, el.offsetTop);
-        // console.log("calculateIfScrolledTo is running ..");
 
         if ((window.scrollY + this.windowHeight) > el.offsetTop) {
             let scrollPercent = (el.getBoundingClientRect().y / this.windowHeight) * 100;

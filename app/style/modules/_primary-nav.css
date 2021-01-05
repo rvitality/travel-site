@@ -33,7 +33,9 @@
         padding: .6rem .5rem;
         transition: .3s all ease;
         margin: 0 .4rem;
-        font-size: .8rem;
+        font-size: .7rem;
+        /* transform: scale(1.1); */
+        display: inline-block;
         background-color: rgba($mainBlue, .7);
 
         @mixin atSmall{
@@ -45,13 +47,19 @@
         @mixin atMedium{
             background-color: rgba($mainBlue, 0);
             margin-right: 1.5rem;
+
+            &.is-current-link{
+                color: #fabb69;
+                transform: scale(1.1);
+            }
+
         }
 
     }
 
     a:hover{
-        background: rgba(255, 255, 255, .8);
-        color: #000;
+        transform: scale(1.1);
+        color: #fabb69;
     }
 
 }
