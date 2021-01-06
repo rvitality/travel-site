@@ -5,7 +5,7 @@
 @import "base/_global";
 @import "modules/_large-hero";
 @import "modules/_btn.css";
-@import "modules/_wrapper.css";
+@import "modules/_wrapper.css"; 
 @import "modules/_page-section.css";
 @import "modules/_headline.css";
 @import "modules/_row.css";
@@ -16,3 +16,5 @@
 @import "modules/_header-section.css";
 @import "modules/_primary-nav.css";
 @import "modules/_reveal-item.css";
+@import "modules/_modal.css";
+@import "modules/_social-icons.css";

@@ -10,6 +10,10 @@
         justify-content: space-between;
     }
 
+    &--narrow{
+        max-width: 570px;
+    }
+
     &--no-padding-until-medium{
         padding: 0;
 

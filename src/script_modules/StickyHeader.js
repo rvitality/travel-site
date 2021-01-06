@@ -49,10 +49,6 @@ class StickyHeader {
             let scrollPercent = (el.getBoundingClientRect().y / this.browserHeight) * 100;
 
             if ((scrollPercent < 18 && scrollPercent > 0.1 && this.scrollDirection === "down") || scrollPercent < 33 && this.scrollDirection === "up") {
-
-                console.log(el.id);
-                console.log(scrollPercent);
-                console.log(this.scrollDirection);
                 let matchingLink = el.getAttribute("data-matching-link");
                 document.querySelectorAll(`.primary-nav a:not(${matchingLink})`).forEach(el => el.classList.remove("is-current-link"));
                 document.querySelector(matchingLink).classList.add("is-current-link");
