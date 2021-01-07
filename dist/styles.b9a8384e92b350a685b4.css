@@ -1,128 +1,101 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 /* Document
    ========================================================================== */
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
 /* Sections
    ========================================================================== */
-
 /**
  * Remove the margin in all browsers.
  */
-
 body {
   margin: 0;
 }
-
 /**
  * Render the `main` element consistently in IE.
  */
-
 main {
   display: block;
 }
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
 /* Grouping content
    ========================================================================== */
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
-
 /* Text-level semantics
    ========================================================================== */
-
 /**
  * Remove the gray background on active links in IE 10.
  */
-
 a {
   background-color: transparent;
 }
-
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
-
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-
 b,
 strong {
   font-weight: bolder;
 }
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-
 code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
-
 /**
  * Add the correct font size in all browsers.
  */
-
 small {
   font-size: 80%;
 }
-
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-
 sub,
 sup {
   font-size: 75%;
@@ -130,34 +103,26 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
 sub {
   bottom: -0.25em;
 }
-
 sup {
   top: -0.5em;
 }
-
 /* Embedded content
    ========================================================================== */
-
 /**
  * Remove the border on images inside links in IE 10.
  */
-
 img {
   border-style: none;
 }
-
 /* Forms
    ========================================================================== */
-
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-
 button,
 input,
 optgroup,
@@ -168,42 +133,34 @@ textarea {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
-
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-
 button,
 input { /* 1 */
   overflow: visible;
 }
-
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-
 button,
 select { /* 1 */
   text-transform: none;
 }
-
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
 }
-
 /**
  * Remove the inner border and padding in Firefox.
  */
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -211,33 +168,27 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
-
 /**
  * Restore the focus styles unset by the previous rule.
  */
-
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-
 /**
  * Correct the padding in Firefox.
  */
-
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
-
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-
 legend {
   box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
@@ -246,161 +197,112 @@ legend {
   padding: 0; /* 3 */
   white-space: normal; /* 1 */
 }
-
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-
 progress {
   vertical-align: baseline;
 }
-
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
-
 textarea {
   overflow: auto;
 }
-
 /**
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
-
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-
 [type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
-
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
-
 /* Interactive
    ========================================================================== */
-
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
-
 details {
   display: block;
 }
-
 /*
  * Add the correct display in all browsers.
  */
-
 summary {
   display: list-item;
 }
-
 /* Misc
    ========================================================================== */
-
 /**
  * Add the correct display in IE 10+.
  */
-
 template {
   display: none;
 }
-
 /**
  * Add the correct display in IE 10.
  */
-
 [hidden] {
   display: none;
-}
-
-$mainBlue: #2f5572;
-$mainOrange: #d59541;
-@define-mixin atSmall{
-    @media(min-width:530px){
-        @mixin-content;
-    }
-}
-
-@define-mixin atMedium{
-    @media(min-width:850px){
-        @mixin-content;
-    }
-}
-
-@define-mixin atLarge{
-    @media(min-width:1000px){
-        @mixin-content;
-    }
 }
 html{
     scroll-behavior: smooth;
 }
-
 body {
     font-family: "Roboto", sans-serif;
     color: #333;
 }
-
 img {
     max-width: 100%;
     height: auto;
 }
-
 .display-flex {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-
 a{
-    color: $mainOrange;
+    color: #d59541;
 }
 .large-hero {
     position: relative;
-    border-bottom: 10px solid $mainBlue;
-
-    &__image{
+    border-bottom: 10px solid #2f5572;
+}
+.large-hero__image{
         display: block;
     }
-
-    &__text-content {
+.large-hero__text-content {
         padding-top: 60px;
         position: absolute;
         z-index: 5;
@@ -408,340 +310,335 @@ a{
         width: 100%;
         text-align: center;
     }
-
-    &__title {
+.large-hero__title {
         font-weight: 300;
-        color: $mainBlue;
+        color: #2f5572;
         font-size: 3rem;
         margin: 0;
-        
-        @mixin atSmall{
-            font-size:  4.8rem;
-        }
 
     }
+@media(min-width:530px){
 
-    &__subtitle {
+    .large-hero__title {
+            font-size:  4.8rem
+
+    }
+    }
+.large-hero__subtitle {
         font-weight: 300;
-        color: $mainBlue;
+        color: #2f5572;
         font-size: 1.5rem;
         margin: 0;
 
-        @mixin atSmall{
-            font-size: 2.9rem;
-        }
+    }
+@media(min-width:530px){
+
+    .large-hero__subtitle {
+            font-size: 2.9rem
 
     }
-
-    &__description {
+    }
+.large-hero__description {
         font-weight: 100;
         font-size: 1.25rem;
         color: #fff;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .2);
         max-width: 30rem;
 
-        @mixin atSmall{
-            font-size: 1.875rem;
-        }
+    }
+@media(min-width:530px){
+
+    .large-hero__description {
+            font-size: 1.875rem
 
     }
-}
+    }
 .btn {
     color: #fff;
     padding: .75rem 1.2rem;
     text-decoration:none;
     display: inline-block;
     transition: transform .2s ease-in-out;
-    background-color: $mainBlue;
+    background-color: #2f5572;
 
-    &__orange{
-        background-color: $mainOrange;
+}
+.btn__orange{
+        background-color: #d59541;
     }
-
-    &__large{
+.btn__large{
         /* uses default font size */
         font-size: .9rem;
         padding: .9rem 1.6rem;
         margin-top: 1rem;
-        
-        @mixin atSmall{
-            font-size: 1.25rem;
-            padding: 1.1rem 1.9rem;
-        }
     }
+@media(min-width:530px){
 
-}
-
+    .btn__large{
+            font-size: 1.25rem;
+            padding: 1.1rem 1.9rem
+    }
+    }
 .btn:hover{
     transform: scale(1.1);
 }
-
-
 .wrapper{
     padding: 0 1.1rem;
     max-width: 1236px;
     margin: auto;
 
-    /* display flex for the nav */
-    &--display-flex{
+}
+/* display flex for the nav */
+.wrapper--display-flex{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
-    &--narrow{
+.wrapper--narrow{
         max-width: 570px;
     }
-
-    &--no-padding-until-medium{
+.wrapper--no-padding-until-medium{
         padding: 0;
 
-        @mixin atLarge{
-            padding: 0 1.1rem;
-        }
+    }
+@media(min-width:1000px){
+
+    .wrapper--no-padding-until-medium{
+            padding: 0 1.1rem
 
     }
-
-    &--medium{
+    }
+.wrapper--medium{
         max-width: 976px;
     }
-
-    &--b-margin{
+.wrapper--b-margin{
         margin-bottom: 1rem;
 
-        @mixin atSmall{
-            margin-bottom: 3.875rem;
-        }
+    }
+@media(min-width:530px){
+
+    .wrapper--b-margin{
+            margin-bottom: 3.875rem
 
     }
-    
-
-    .wrapper{
+    }
+.wrapper .wrapper{
         padding: 0 0;
     }
-
-}
 .page-section{
     padding: 1.2rem 0;
-    
-    @mixin atMedium{
-        padding: 4.5rem 0;
-    }
-
-    &--no-b-padding-until-medium{
-        padding-bottom: 0;
-
-        @mixin atMedium{
-            padding: 4.5rem 0;
-        }
-    }
-
-    &--blue{
-        background-color: $mainBlue;
-        color: #fff;
-    }
-
-    &--testimonials {
-        background: #e0e6ef;
-
-        @mixin atLarge{
-            background:linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,0.6)), url("https://images.pexels.com/photos/3184356/pexels-photo-3184356.jpeg?cs=srgb&dl=pexels-fauxels-3184356.jpg&fm=jpg");
-            background-size: cover;
-        }
-    }
 
 }
+@media(min-width:850px){
+.page-section{
+        padding: 4.5rem 0
+
+}
+    }
+.page-section--no-b-padding-until-medium{
+        padding-bottom: 0;
+    }
+@media(min-width:850px){
+
+    .page-section--no-b-padding-until-medium{
+            padding: 4.5rem 0
+    }
+    }
+.page-section--blue{
+        background-color: #2f5572;
+        color: #fff;
+    }
+.page-section--testimonials {
+        background: #e0e6ef;
+    }
+@media(min-width:1000px){
+
+    .page-section--testimonials {
+            background:linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,0.6)), url("https://images.pexels.com/photos/3184356/pexels-photo-3184356.jpeg?cs=srgb&dl=pexels-fauxels-3184356.jpg&fm=jpg");
+            background-size: cover
+    }
+    }
 .headline{
     font-weight: 300;
     font-size: 1.8rem;
-    color: $mainBlue;
+    color: #2f5572;
 
-    @mixin atSmall{
-        font-size: 2.875rem;
+}
+@media(min-width:530px){
+.headline{
+        font-size: 2.875rem
+
+}
     }
-
-    @mixin atMedium{
-        &--no-t-margin{
+@media(min-width:850px){
+        .headline--no-t-margin{
             margin-top: 0;
         }
     }
-
-    &--centered{
+.headline--centered{
         text-align: center;
     }
-
-    &--orange{
-        color: $mainOrange;
+.headline--orange{
+        color: #d59541;
     }
-    
-    &--small{
+.headline--small{
         
         font-size: 1.35rem;
-
-        @mixin atSmall{
-            font-size: 1.875rem;
-        }
     }
-
-    &--semi-light{
+@media(min-width:530px){
+    
+    .headline--small{
+            font-size: 1.875rem
+    }
+    }
+.headline--semi-light{
         font-weight: 300;
     }
-
-    &--light{
+.headline--light{
         font-weight: 200;
     }
-
-    &--narrow{
+.headline--narrow{
         max-width: 31.25rem;
         margin: auto;
     }
-
-    &--b-margin-small{
+.headline--b-margin-small{
         margin-bottom: .5em;
     }
-    
-    &--b-margin-large{
+.headline--b-margin-large{
         margin-bottom: 1.6em;
     }
-
-}
 .row{
     display: grid;
 
-    @mixin atMedium{
-        &--two-cols{
+}
+@media(min-width:850px){
+        .row--two-cols{
             grid-template-columns: 35% 60%;
             grid-gap: 3%;
         }
         
-        &--two-cols-equal{
+        .row--two-cols-equal{
             grid-template-columns: 1fr 1fr;
             grid-gap: 10%;
         }
-
     }
-
-    @mixin atLarge{
-        &--three-cols-equal{
+@media(min-width:1000px){
+        .row--three-cols-equal{
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 4%;
         }
     }
-
-    &--t-padding-large{
+.row--t-padding-large{
         padding-top: 5rem;
         /* margin-top: 13rem; */
     }
-
-}
-
 .feature-item{
     display: inline-block;
 
-
-    @mixin atSmall{
+}
+@media(min-width:530px){
+.feature-item{
         display: flex;
         align-items: flex-start;
-        margin-top: 2rem;
-    }
+        margin-top: 2rem
 
-    &--title{
+}
+    }
+.feature-item--title{
         font-size: 1.875rem;
         font-weight: 300;
         margin-top: 0;
     }
-
-
-    &--icon{
+.feature-item--icon{
         display: block;
         margin: 0 auto 1.5rem auto;
         
-        @mixin atSmall{
+    }
+@media(min-width:530px){
+
+
+    .feature-item--icon{
             margin-right: 2rem;
-            display: inline-block;
-        }
+            display: inline-block
         
     }
-
-    &--title{
+    }
+.feature-item--title{
         text-align: center;
 
-        @mixin atSmall{
-            text-align: left;
-        }
+    }
+@media(min-width:530px){
+
+    .feature-item--title{
+            text-align: left
 
     }
-
-}
-.generic-content-container{
-    
-    p {
+    }
+.generic-content-container p {
         line-height: 1.65;
         font-size: 1.125rem;
         margin: 0 0 1.8rem 0;
         font-weight: 300;
         text-align: justify;
     }
-
-    p a{
+.generic-content-container p a{
         font-weight: 700;
     }
-
-}
 .section-title{
     font-size: 2.55rem;
     font-weight: 300;
     text-align: center;
     margin-top: 0;
-
-    @mixin atSmall{
-        font-size: 3.75rem;
+}
+@media(min-width:530px){
+.section-title{
+        font-size: 3.75rem
+}
     }
-
-    &--blue{
-        color: $mainBlue;
+.section-title--blue{
+        color: #2f5572;
     }
-
-    &--less-margin{
+.section-title--less-margin{
         margin-top: 0;
         margin-bottom: 0;
     }
-
-    &__icon{
+.section-title__icon{
 
         display: block;
         margin: 1.25rem auto;
-        
-        @mixin atMedium{
+
+    }
+@media(min-width:850px){
+
+    .section-title__icon{
             position: relative; 
             top: 8px; 
             display: inline-block;
             margin-bottom: 0;
-            margin-right: 1rem;
-        }
+            margin-right: 1rem
 
     }
-
-    strong{
+    }
+.section-title strong{
         font-weight: 500;
     }
-}
 .testimonial{
     background: rgba(255, 255, 255, 0.85);
     position: relative;
     padding: 0 1.125rem 1px 1.125rem;
     margin-bottom: 120px;
-    
-    @mixin atLarge{
-        margin-bottom: 0;
-        padding: 0 1.85rem 1px 1.85rem;
-    }
 
-    &--last{
+}
+@media(min-width:1000px){
+.testimonial{
+        margin-bottom: 0;
+        padding: 0 1.85rem 1px 1.85rem
+
+}
+    }
+.testimonial--last{
         margin-bottom: 0;
     }
-
-    &__photo{
+.testimonial__photo{
         border-radius: 80px;
         overflow: hidden;
         position: relative;
@@ -753,48 +650,42 @@ a{
         height: 160px;
         border: 6px solid rgba(255, 255, 255, 0.8);
     }
-
-    &__title{
-        color: $mainBlue;
+.testimonial__title{
+        color: #2f5572;
         text-align: center;
         font-size: 1.5rem;
         font-weight: 500;
         margin: 0;
     }
-    
-    &__subtitle{
-        color: $mainOrange;
+.testimonial__subtitle{
+        color: #d59541;
         text-align: center;
         font-size: 0.9375rem;
         font-weight: 400;
         margin: .25rem .25rem 1rem .25rem;
     }
-
-}
-
-
-
-
 .footer-section{
     text-align: center;
     padding: .5rem 0;
     color: #fff;    
-    background-color: $mainBlue;
+    background-color: #2f5572;
 
-    &__text-desc{
+}
+.footer-section__text-desc{
         font-weight: 200;
         display: block;
         margin-bottom: 1rem;
 
-        @mixin atMedium{
+    }
+@media(min-width:850px){
+
+    .footer-section__text-desc{
             display: inline;
             margin-bottom: 0;
-            margin-right: 1.5rem;
-        }
+            margin-right: 1.5rem
 
     }
-
-}
+    }
 .header-section{
     padding: .8rem 0;
     position: absolute;
@@ -802,18 +693,20 @@ a{
     width: 100%;
     transition: background-color .3s ease-out;
 
-    @mixin atMedium{
+}
+@media(min-width:850px){
+.header-section{
         position: fixed;
-        background: rgba($mainBlue, .3);
+        background: rgba(47,85,114, .3)
 
-        &--dark{
+}
+
+        .header-section--dark{
             background-color: rgba(23, 51, 72, .85);
         }
-
     }
-
-    /* Hamburger Button itself */
-    &__menu-icon{
+/* Hamburger Button itself */
+.header-section__menu-icon{
         width: 24px;
         height: 17px;
         position: absolute;
@@ -822,9 +715,9 @@ a{
         z-index: 5;
         cursor: pointer;
 
-
-        /* the 3 bars */
-        &::before{
+    }
+/* the 3 bars */
+.header-section__menu-icon::before{
             content: "";
             position: absolute;
             top: 0;
@@ -835,8 +728,7 @@ a{
             transform-origin: 0 0;
             transition: transform .3s ease-out;
         }
-
-        &__middle{
+.header-section__menu-icon__middle{
             position: absolute;
             /* top: 50%; */
             top: 7px;
@@ -848,8 +740,7 @@ a{
             transition: all .3s ease-out;
             transform-origin: 0 50%;
         }
-
-        &::after{
+.header-section__menu-icon::after{
             content: "";
             position: absolute;
             bottom: 0%;
@@ -860,34 +751,26 @@ a{
             transform-origin: 0 100%;
             transition: transform .3s ease-out;
         }
-
-        /* Making of X */
-        &--close-x{
-            &::before{
+/* Making of X */
+.header-section__menu-icon--close-x::before{
                 transform: rotate(40deg);
             }
-
-            .header-section__menu-icon__middle{
+.header-section__menu-icon--close-x .header-section__menu-icon__middle{
                 opacity: 0;
                 transform: scaleX(0);
             }
-
-            &::after{
+.header-section__menu-icon--close-x::after{
                 transform: rotate(-40deg) translateY(1px);
             }
-
-        }
-        
-
-        @mixin atMedium{
-            display: none;
-        }
+@media(min-width:850px){
+    .header-section__menu-icon{
+            display: none
 
     }
-
-
-    &__logo{
-        object-fit: contain;
+    }
+.header-section__logo{
+        -o-object-fit: contain;
+           object-fit: contain;
         position: absolute;
         top: 0;
         transform: translateX(-50%) scale(.8);
@@ -896,28 +779,27 @@ a{
         left: 50%;
         transition: all .3s ease-out;
         padding: 25px 35px;
-        background: $mainBlue;
+        background: #2f5572;
+    }
+@media(min-width:850px){
 
 
-        @mixin atMedium{
+    .header-section__logo{
             left: auto;
-            transform: translateX(0);
-
-            .header-section--dark &{
-                transform: scale(.63);
-            }
+            transform: translateX(0)
 /* 
             .header-section--dark &:hover{
                 transform: scale(.8);
             } */
-
-        }
     }
 
-    &__logo:hover{
+            .header-section--dark .header-section__logo{
+                transform: scale(.63);
+            }
     }
-
-    &__nav-container{
+.header-section__logo:hover{
+    }
+.header-section__nav-container{
         opacity: 0;
         z-index: -10;
         width: 100%;
@@ -926,17 +808,23 @@ a{
         padding-top: 100px;
         text-align: center;
 
-        @mixin atMedium{
+
+    }
+@media(min-width:850px){
+
+    .header-section__nav-container{
             opacity: 1;
             z-index: 1;
             padding-top: 0;
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            transform: scale(1);
-        }
+            transform: scale(1)
 
-        &--is-visible{
+
+    }
+    }
+.header-section__nav-container--is-visible{
             opacity: 1;
             z-index: 1;
             display: flex;
@@ -946,24 +834,21 @@ a{
             justify-content: center;
             transform: scale(1);
         }
-
-        &--is-expanded{
-            background: rgba($mainBlue, .6);
+.header-section__nav-container--is-expanded{
+            background: rgba(47,85,114, .6);
         }
-
-
-    }
-
-}
 .primary-nav{
 
     margin: .6rem 0;
 
-    @mixin atMedium{
-        margin: 0;
-    }
+}
+@media(min-width:850px){
+.primary-nav{
+        margin: 0
 
-    ul{
+}
+    }
+.primary-nav ul{
         margin: 0;
         padding: 0;
         display: flex;
@@ -971,20 +856,21 @@ a{
         justify-content: center; 
         margin-bottom: 2rem;
 
-        @mixin atMedium{
+    }
+@media(min-width:850px){
+
+    .primary-nav ul{
             margin-bottom: 0;
             display: flex;
             align-items: center;
-            justify-content: center;
-        }
+            justify-content: center
 
     }
-
-    li{
+    }
+.primary-nav li{
         list-style-type: none;
     }
-    
-    a{
+.primary-nav a{
         text-decoration: none;
         color: #fff;
         padding: .6rem .5rem;
@@ -993,44 +879,45 @@ a{
         font-size: .7rem;
         /* transform: scale(1.1); */
         display: inline-block;
-        background-color: rgba($mainBlue, .7);
+        background-color: rgba(47,85,114, .7);
 
-        @mixin atSmall{
+    }
+@media(min-width:530px){
+    
+    .primary-nav a{
             font-size: 1rem;
             padding: .8rem 1rem;
-            margin: 0 1rem;
-        }
+            margin: 0 1rem
 
-        @mixin atMedium{
-            background-color: rgba($mainBlue, 0);
-            margin-right: 1.5rem;
+    }
+    }
+@media(min-width:850px){
+    
+    .primary-nav a{
+            background-color: rgba(47,85,114, 0);
+            margin-right: 1.5rem
 
-            &.is-current-link{
+    }
+
+            .primary-nav a.is-current-link{
                 color: #fabb69;
                 transform: scale(1.1);
             }
-
-        }
-
     }
-
-    a:hover{
+.primary-nav a:hover{
         transform: scale(1.1);
         color: #fabb69;
     }
-
-}
 .reveal-item{
     opacity: 0;
     transition: opacity 1s ease-out, transform 1s ease-out;
     transform: scale(1.15);
 
-    &--is-visible{
+}
+.reveal-item--is-visible{
         opacity: 1;
         transform: scale(1);
     }
-
-}
 .modal{
     opacity: 0;
     visibility: hidden;
@@ -1047,22 +934,20 @@ a{
     align-items: center;
     justify-content: center;
 
-    &--is-visible{
+}
+.modal--is-visible{
         opacity: 1;
         visibility: visible;
         transform: scale(1);
     }
-
-
-    &__description{
+.modal__description{
         text-align: center;
         font-size: 1.3rem;
         font-weight: 300;
         line-height: 1.65;
         margin-bottom: 2rem;
     }
-
-    &__close{
+.modal__close{
         position: absolute;
         top: 15px;
         right: 15px;
@@ -1071,31 +956,33 @@ a{
         transform-origin: 100% 0;
         transition: all .3s ease-out;
         cursor: pointer;
-        color: $mainBlue;
+        color: #2f5572;
     }
-
-    &__close:hover{
-        color: $mainOrange;
+.modal__close:hover{
+        color: #d59541;
     }
-
-}
 .social-icons{
     text-align: center;
 
-    &__icon{
+}
+.social-icons__icon{
         position: relative;
         display: inline-block;
         width: 33%;
         height: 70px;
         margin: 0 5px 5px 5px;
         transition: transform .3s ease-out;
-        background-color: $mainOrange;
+        background-color: #d59541;
 
-        @mixin atSmall{
-            width: 70px;
-        }
-    
-        img{
+    }
+@media(min-width:530px){
+
+    .social-icons__icon{
+            width: 70px
+
+    }
+    }
+.social-icons__icon img{
             width: 50%;
             height: 50%;
             position: absolute;
@@ -1103,12 +990,6 @@ a{
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
-    }
-
-    &__icon:hover{
+.social-icons__icon:hover{
         transform: scale(1.1);
     }
-
-}
-
