@@ -1,3 +1,6 @@
+// npm install postcss-loader@~3.0.0 --save-dev
+// should be that version to prevent the "mixins" problem, try installing or updating it to its latest version and see the erro
+
 import "../app/style/style.css";
 import MobileMenu from "./script_modules/MobileMenu";
 import RevealOnScroll from "./script_modules/RevealOnScroll";
@@ -20,7 +23,7 @@ document.querySelectorAll(".open-modal-btn").forEach(el =>
         if (modal === undefined) {
 
             // receives a promise
-            import( /* webpackChunkName: modal */ "./script_modules/Modal")
+            import("./script_modules/Modal")
                 .then(data => {
                     // that default has something to do with webpack
                     modal = new data.default();
