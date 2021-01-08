@@ -1,4 +1,4 @@
-// npm install postcss-loader@~3.0.0 --save-dev
+// try --- npm install postcss-loader@~3.0.0 --save-dev
 // should be that version to prevent the "mixins" problem, try installing or updating it to its latest version and see the erro
 
 import "../app/style/style.css";
