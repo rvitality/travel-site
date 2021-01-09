@@ -109,22 +109,15 @@
             .header-section--dark &{
                 transform: scale(.63);
             }
-/* 
-            .header-section--dark &:hover{
-                transform: scale(.8);
-            } */
 
         }
-    }
-
-    &__logo:hover{
     }
 
     &__nav-container{
         opacity: 0;
         z-index: -10;
         width: 100%;
-        transform: scale(1.2); 
+        transform: scale(.9); 
         transition: all .3s ease-out;
         padding-top: 100px;
         text-align: center;
