@@ -1,4 +1,4 @@
-/* .reveal-item{
+.reveal-item{
     opacity: 0;
     transition: opacity 1s ease-out, transform 1s ease-out;
     transform: scale(1.15);
@@ -8,4 +8,4 @@
         transform: scale(1);
     }
 
-} */
+}
