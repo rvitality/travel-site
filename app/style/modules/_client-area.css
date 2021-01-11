@@ -7,10 +7,19 @@
 
     &__input{
         flex: 1;
+        padding: 0 .5rem;
     }
 
     &__error{
         color: red;
+    }
+
+    .btn{
+        border: none;
+        /* border: 1px solid #111; */
+        cursor: pointer;
+        background-color: $mainOrange;
+        margin-left: 1rem;
     }
 
 }

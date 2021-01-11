@@ -13,12 +13,11 @@ class ClientArea {
     events() {
         this.form.addEventListener("submit", e => {
             e.preventDefault();
-            // this.sendRequest();
+            this.sendRequest();
         });
     }
 
     sendRequest() {
-        console.log(123);
         Axios.post("https://brave-lamarr-83fc61.netlify.app/.netlify/functions/secret-area", {
                 password: this.field.value
             })
@@ -39,12 +38,12 @@ class ClientArea {
         let html = document.createElement("div");
         html.innerHTML = `<div class="client-area">
         <div class="wrapper wrapper--medium">
-        <h2 class="section-title section-title--blue">Secret Client Area</h2>
-        <form class="client-area__form" action="">
-            <input class="client-area__input" type="text" placeholder="Enter the secret phrase">
-            <button class="btn btn--orange">Submit</button>
-        </form>
-        <div class="client-area__content-area"></div>
+            <h2 class="section-title section-title--blue">Secret Client Area</h2>
+            <form class="client-area__form" action="">
+                <input class="client-area__input" type="text" placeholder="Enter the secret phrase">
+                <button class="btn btn--orange">Submit</button>
+            </form>
+            <div class="client-area__content-area"></div>
         </div>
     </div>`;
 
