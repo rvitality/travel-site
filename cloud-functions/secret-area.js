@@ -12,10 +12,10 @@ exports.handler = function (event, context, callback) {
         body = {};
     }
 
-    if (body.password === "javascript") {
+    if (body.password == "javascript") {
         callback(null, {
             statuCode: 200,
-            body: "Welcome to the super secret area."
+            body: secretContent
         })
     } else {
         callback(null, {

@@ -13,19 +13,22 @@ class ClientArea {
     events() {
         this.form.addEventListener("submit", e => {
             e.preventDefault();
-            this.sendRequest();
+            // this.sendRequest();
         });
     }
 
     sendRequest() {
+        console.log(123);
         Axios.post("https://brave-lamarr-83fc61.netlify.app/.netlify/functions/secret-area", {
                 password: this.field.value
             })
             .then(res => {
+                console.log("success");
                 this.form.remove();
                 this.contentArea.innerHTML = res.data;
             })
             .catch(() => {
+                console.log("catched");
                 this.contentArea.innerHTML = `<p class="client-area__error">The secret phrase is not correct.</p>`;
                 this.field.value = "";
                 this.field.focus();
